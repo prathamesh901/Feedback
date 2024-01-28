@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jost&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 400px;
+    width: 600px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(227, 219, 226);
+}
+.top{
+    background-color: rgb(88, 2, 110);
+    border-top-right-radius: 19px;
+   border-top-left-radius: 19px;
+   color: white;
+   font-family: 'Jost', sans-serif;
+   width: 600px;
+   height: 94px;
+   border-bottom: 2px solid white;
+   display: flex;
+}
+.image{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.college-name{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+h1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    font-family: 'Jost', sans-serif;
+}
+.select{
+    display: flex;
+    font-size: 25px;
+    gap: 3rem;
+    margin-top:40px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    background: url();
+}
+#year{
+    font-size: 20px;
+    border-radius: 2px;
+}
+#year:hover{
+    cursor: pointer;
+}
+#branch{
+    font-size: 20px;
+    border-radius: 2px;
+}
+#branch:hover{
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    margin-top: 100px;
+   margin-left: 110px;
+   font-size: 15px;
+   border: 2px solid black;
+   border-radius: 5px;
+   height: 30px;
+   width: 250px;
+   padding: 4px;
+   padding-left: 30px;
+   font-weight:600;
+}
+ .button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+ }
+
+ .modal {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0.5;
+}
+.content {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+    animation: popup 0.2s;
+}
+@keyframes popup {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }
+.box-close {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color:  rgb(88, 2, 110);
+    text-decoration: none;
+    font-size: 30px;
+}
+.box{
+    color: black;
+    font-family:'Jost', sans-serif; 
+    font-weight: 800;
+    display: flex;
+}
